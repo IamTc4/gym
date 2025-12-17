@@ -15,7 +15,23 @@
     padding: 0;
     box-sizing: border-box;
 }
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    /* Path to your uploaded image with a dark overlay for text readability */
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('fit-cartoon-character-training.jpg') no-repeat center center/cover;
+}
 
+/* Ensure the hero content sits above the background correctly */
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
 body {
     font-family: var(--font-main);
     background-color: var(--background-color);
